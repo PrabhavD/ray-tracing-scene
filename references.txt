@@ -1,0 +1,10 @@
+~\cite{Shirley2020RTW1}
+
+@misc{Shirley2020RTW1,
+   title = {Ray Tracing in One Weekend},
+   author = {Peter Shirley},
+   year = {2020},
+   month = {December},
+   note = {\small \texttt{https://raytracing.github.io/books/RayTracingInOneWeekend.html}},
+   url = {https://raytracing.github.io/books/RayTracingInOneWeekend.html}
+}
