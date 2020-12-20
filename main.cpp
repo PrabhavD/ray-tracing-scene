@@ -13,7 +13,7 @@ color ray_color(const ray& r) {
 int main() {
 
     // Image
-    const auto aspect_ratio = 16.0 / 9.0;
+    const auto aspect_ratio = 16.0 / 9.0;   //16:9 aspect ratio
     const int image_width = 400;
     const int image_height = static_cast<int>(image_width / aspect_ratio);
 
@@ -33,7 +33,7 @@ int main() {
     std::cout << "P3\n" << image_width << " " << image_height << "\n255\n";
 
     for (int j = image_height-1; j >= 0; --j) {
-        std::cerr << "\rScanlines remaining: " << j << ' ' << std::flush;
+        std::cerr << "\rScanlines remaining: " << j << ' ' << std::flush;   //progess indicator
         for (int i = 0; i < image_width; ++i) {
             auto u = double(i) / (image_width-1);
             auto v = double(j) / (image_height-1);
