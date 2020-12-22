@@ -6,7 +6,7 @@
 class ray {
     public:
         ray() {}
-        ray(const point3& origin, const vec3& direction)  
+        ray(const point3& origin, const vec3& direction)  //constructor overload with origin and directoin specified
             : orig(origin), dir(direction)
         {}
 
