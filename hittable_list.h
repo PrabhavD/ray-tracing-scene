@@ -6,13 +6,13 @@
 #include <memory>
 #include <vector>
 
-using std::shared_ptr;
+using std::shared_ptr;  //using shared_ptr requires C++ 11 or later version
 using std::make_shared;
 
 class hittable_list : public hittable {
     public:
         hittable_list() {}
-        hittable_list(shared_ptr<hittable> object) { add(object); }
+        hittable_list(shared_ptr<hittable> object) { add(object); } //shared_pointer used to enable mutliple objects retain same texture
 
         void clear() { objects.clear(); }
         void add(shared_ptr<hittable> object) { objects.push_back(object); }
